@@ -29,13 +29,25 @@ structs.
 ## Usage
 
     $ ./dfsshell 
+
     file:/Users/me> ls
     Desktop		Documents	Downloads	Library		Movies		Music		Pictures	Public		git
     file:/Users/me> dfsstack
     * 0 Fri Sep 13 12:26:21 PDT 2024 file:/Users/me
+
     file:/Users/me> dfsls
     * 0 file	file:///	local
       1 hdfs-local	hdfs://127.0.0.1:9000	local hdfs
+
+    file:/Users/me> dfs hdfs-local
+    hdfs-local:/Users/me> dfsstack
+    * 0 Fri Sep 13 12:37:37 PDT 2024 hdfs-local:/Users/me
+      1 Fri Sep 13 12:37:26 PDT 2024 file:/Users/me
+
+    hdfs-local:/Users/me> dfspop 
+    file:/Users/me> dfsstack
+    * 0 Fri Sep 13 12:37:26 PDT 2024 file:/Users/me
+    
     file:/Users/me> help
     cd		Change to directory DIR.
     pwd		Show current working directory.
