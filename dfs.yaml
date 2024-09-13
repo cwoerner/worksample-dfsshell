@@ -1,0 +1,7 @@
+file:
+ url: file:///
+ desc: local
+hdfs-local:
+ url: hdfs://127.0.0.1
+ desc: local hdfs
+ 
