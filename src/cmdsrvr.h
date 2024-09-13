@@ -13,7 +13,7 @@
 
 
 #ifndef SRVR_CMD
-#define SRVR_CMD "java -Xmx128 -server com.quantcast.dfsshell.server.Server"
+#define SRVR_CMD "java -Xmx128 -server com.dfsshell.server.Server"
 #endif
 
 pid_t cmdsrvr_spawn();

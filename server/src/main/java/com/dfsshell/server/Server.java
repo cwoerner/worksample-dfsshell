@@ -1,4 +1,4 @@
-package com.quantcast.dfsshell.server;
+package com.dfsshell.server;
 
 public class Server {
 
