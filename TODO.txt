@@ -1,0 +1,7 @@
+* add a "char *cwd" to dfs_shell_t - representing the local working directory
+* add "local" or "system" built in command to just do a system() command 
+    -- should it just be a dfs-like thing which changes the shell into "local" (ie. bash) mode?
+* add a "lcd" built-in to change the local working directory
+* add built-ins for "cp", "mv", "rm"
+* dfs_shell_stack should be circular bounded list 
+    -- protect against running out of memory by overwriting oldest context.
