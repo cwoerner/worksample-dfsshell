@@ -1,7 +1,6 @@
 /*
  * dfs.c
  *
- *  Created on: Jul 21, 2011
  *      Author: cwoerner
  */
 #include <stdlib.h>

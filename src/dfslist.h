@@ -1,7 +1,6 @@
 /*
  * dfslist.h
  *
- *  Created on: Jul 21, 2011
  *      Author: cwoerner
  */
 

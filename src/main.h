@@ -1,7 +1,6 @@
 /*
  * main.h
  *
- *  Created on: Jul 26, 2011
  *      Author: cwoerner
  */
 

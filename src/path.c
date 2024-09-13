@@ -1,7 +1,6 @@
 /*
  * path.c
  *
- *  Created on: Jul 24, 2011
  *      Author: cwoerner
  */
 
