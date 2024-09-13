@@ -19,12 +19,14 @@ In this form, dfsshell has native bindings to both qfs and hdfs (via jni
 integration) for remote filesystem shell capabilities.  In that version
 there are drivers written in C implementing a filesystem operations struct
 (dfs_fops) containing members to all the io "syscalls" such as read, write,
-seek, among other lower-level interface methods.  The remote fs drivers
-then implement the various built-in functions using those interface methods.
-The fs_ops struct becomes a pointer to the current dfs context on the stack,
-enabling the built-in functions to operate over any supported filesystem
-using the polymorphism of the various flavors of remote dfs_fops driver
-structs.
+seek, among other lower-level interface methods.  The remote fs driver's
+syscalls are leveraged by the common built-in functions whose implementation
+is filesystem agnostic.  That is, the `cat` builtin is written in terms of
+of the abstract dfs_fops interface, and therefor delegates to the syscalls
+corresponding to the specific implementation offered by the current dfs
+context's dfs_fops struct interface methods.  The dfs context maintains a
+pointer to the corresponding fs_ops struct providing appropriate bindings
+to the specific flavor of remote filesystem (e.g. qfs, hdfs, etc.).
 
 ## Usage
 
