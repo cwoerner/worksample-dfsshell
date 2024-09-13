@@ -1,6 +1,6 @@
 # Simple stacking shell.
 
-See https://github.com/cwoerner/dfsshell
+See https://github.com/cwoerner/worksample-dfsshell
 
 Maintains state for multiple shell environments, a bit like a *very* poor
 man's tmux.  The shell environments are stacked together, enabling you to
@@ -70,8 +70,8 @@ to the specific flavor of remote filesystem (e.g. qfs, hdfs, etc.).
 
 ## Building
 
-    $ git clone git@github.com:cwoerner/dfsshell.git
-    $ cd ./dfsshell
+    $ git clone git@github.com:cwoerner/worksample-dfsshell.git
+    $ cd ./worksample-dfsshell
     $ make dfsshell CPPFLAGS='-DDFS_YAML=\"/opt/dfsshell/dfsshell/dfs.yaml\"'
     
 This produces a single binary ./dfsshell, along with object files in ./obj
