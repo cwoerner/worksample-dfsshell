@@ -1,5 +1,7 @@
 # Simple stacking shell.
 
+See https://github.com/cwoerner/dfsshell
+
 Maintains state for multiple shell environments, a bit like a *very* poor
 man's tmux.  The shell environments are stacked together, enabling you to
 push and pop new contexts onto each other.
@@ -68,7 +70,9 @@ to the specific flavor of remote filesystem (e.g. qfs, hdfs, etc.).
 
 ## Building
 
-    make dfsshell CPPFLAGS='-DDFS_YAML=\"/opt/dfsshell/dfsshell/dfs.yaml\"'
+    $ git clone git@github.com:cwoerner/dfsshell.git
+    $ cd ./dfsshell
+    $ make dfsshell CPPFLAGS='-DDFS_YAML=\"/opt/dfsshell/dfsshell/dfs.yaml\"'
     
 This produces a single binary ./dfsshell, along with object files in ./obj
 
